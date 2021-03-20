@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="What does this sign represent?"
+        android:layout_margin="10dp"
         android:textColor="#0F6B2C"
         android:textSize="30sp"
         android:gravity="center"
@@ -38,7 +39,7 @@
                 />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center_vertical"
@@ -47,6 +48,7 @@
 
         <ProgressBar
             android:id="@+id/progressBar"
+            style=">android:attr/progressBarStyleHorizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
