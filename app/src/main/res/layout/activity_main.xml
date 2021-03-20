@@ -28,8 +28,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/transparent"
+            app:cardElevation="4dp"
             >
 
             <LinearLayout
@@ -63,7 +62,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="What's your name?"
-                        android:textColorHint="@color/white"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
