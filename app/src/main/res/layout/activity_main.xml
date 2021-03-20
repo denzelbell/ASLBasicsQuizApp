@@ -19,7 +19,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginBottom="30dp"
-        android:textColor="@color/textGold"
+        android:textColor="@color/white"
         />
 
         <androidx.cardview.widget.CardView
@@ -28,7 +28,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardElevation="10dp"
             >
 
             <LinearLayout
@@ -45,7 +45,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:textColor="@color/textGold"
+                android:textColor="#0F6B2C"
                 android:layout_marginTop="20dp"
                 >
             </TextView>
@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="#897409"
+                android:backgroundTint="#10C048"
                 android:text="Start"
                 android:textColor="@color/white"
                 android:textSize="18dp"
