@@ -29,12 +29,13 @@
         android:textStyle="bold"
         />
 
-        <ImageView
-            android:id="@+id/iv_image"
-            android:layout_width="223dp"
-            android:layout_height="254dp"
-            android:layout_marginTop="16dp"
-            app:srcCompat="@drawable/a_letter" />
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="250dp"
+                android:layout_height="246dp"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/a_letter"
+                />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -73,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="default_option_border_bg"
+        android:background="@drawable/default_option_border_bg"
         android:gravity="center"
         android:padding="15dp"
         android:textColor="#7A8089"
@@ -86,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="default_option_border_bg"
+        android:background="@drawable/default_option_border_bg"
         android:gravity="center"
         android:padding="15dp"
         android:textColor="#7A8089"
@@ -99,7 +100,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="default_option_border_bg"
+        android:background="@drawable/default_option_border_bg"
         android:gravity="center"
         android:padding="15dp"
         android:textColor="#7A8089"
