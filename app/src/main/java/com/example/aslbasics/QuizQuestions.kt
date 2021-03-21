@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_quiz_questions.*
 
-class QuizQuestions : AppCompatActivity() {
+class QuizQuestions : AppCompatActivity(), View.OnClickListener {
 
     private var aCurrentPosition: Int = 1
     private var aQuestionList: ArrayList<Questions>? = null
@@ -24,6 +24,7 @@ class QuizQuestions : AppCompatActivity() {
         setContentView(R.layout.activity_quiz_questions)
 
         aUserName = intent.getStringExtra(Constants.USER_NAME)
+
         aQuestionList = Constants.getQuestions()
 
         setQuestion()
@@ -31,6 +32,7 @@ class QuizQuestions : AppCompatActivity() {
         tv_opt1.setOnClickListener(this)
         tv_opt2.setOnClickListener(this)
         tv_opt3.setOnClickListener(this)
+
         btn_submit.setOnClickListener(this)
     }
 
@@ -96,15 +98,19 @@ class QuizQuestions : AppCompatActivity() {
 
                     when{
                         aCurrentPosition <= aQuestionList!!.size ->{
-                            setQuestion() // changes page when submit is pressed
+
+                            setQuestion()
+                            tv_opt1.isClickable = true
+                            tv_opt2.isClickable = true
+                            tv_opt3.isClickable = true
+
                         } else ->{
-                        // Goto Results page and pass values from name and answers.
-                        // val intent = Intent(this, ResultActivity::class.java)
-                        // intent.putExtra(Constants.USER_NAME, mUserName)
-                        // intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
-                        // intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionList!!.size)
-                        // startActivity(intent)
-                        // finish()
+                        val intent = Intent(this, Results::class.java)
+                        intent.putExtra(Constants.USER_NAME, aUserName)
+                        intent.putExtra(Constants.CORRECT_ANSWERS, aCorrectAnswers)
+                        intent.putExtra(Constants.TOTAL_QUESTIONS, aQuestionList!!.size)
+                        startActivity(intent)
+                        finish()
                     }
                     }
                 } else {
@@ -113,10 +119,16 @@ class QuizQuestions : AppCompatActivity() {
 
                     if (question!!.correctAnswer != aSelectedOptionPosition) {
                         answerView(aSelectedOptionPosition, R.drawable.wrong_option_border_bg)
+                        tv_opt1.isClickable = false
+                        tv_opt2.isClickable = false
+                        tv_opt3.isClickable = false
                     } else {
                         aCorrectAnswers++
                     }
                     answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
+                    tv_opt1.isClickable = false
+                    tv_opt2.isClickable = false
+                    tv_opt3.isClickable = false
 
                     if (aCurrentPosition == aQuestionList!!.size) {
                         btn_submit.text = "FINISH"
@@ -124,32 +136,26 @@ class QuizQuestions : AppCompatActivity() {
                         btn_submit.text = "GO TO NEXT QUESTION"
                     }
                     aSelectedOptionPosition = 0
-
                 }
             }
         }
     }
 
-    // Function that colors the answers
+    // Responsible for answer colors
     private fun answerView(answer: Int, drawablesView: Int){
         when(answer){
             1 -> {
-                tv_option_one.background = ContextCompat.getDrawable(
+                tv_opt1.background = ContextCompat.getDrawable(
                     this, drawablesView
                 )
             }
             2 -> {
-                tv_option_two.background = ContextCompat.getDrawable(
+                tv_opt2.background = ContextCompat.getDrawable(
                     this, drawablesView
                 )
             }
             3 -> {
-                tv_option_three.background = ContextCompat.getDrawable(
-                    this, drawablesView
-                )
-            }
-            4 -> {
-                tv_option_four.background = ContextCompat.getDrawable(
+                tv_opt3.background = ContextCompat.getDrawable(
                     this, drawablesView
                 )
             }
@@ -159,8 +165,8 @@ class QuizQuestions : AppCompatActivity() {
     // Function that tells the app what the options should look like if selected
     private fun selectedOptionView(tv: TextView, selectedOptionNum: Int){
 
-        defaultOptionsView()
-        mSelectedOptionPosition = selectedOptionNum
+        defaultOptView()
+        aSelectedOptionPosition = selectedOptionNum
 
         tv.setTextColor((Color.parseColor("#363A43")))
         tv.setTypeface(tv.typeface, Typeface.BOLD)
