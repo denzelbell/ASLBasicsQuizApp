@@ -1,9 +1,12 @@
 package com.example.aslbasics
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_results.*
 
 class Results : AppCompatActivity() {
@@ -16,6 +19,11 @@ class Results : AppCompatActivity() {
         val username = intent.getStringExtra((Constants.USER_NAME))
         val totalQuestions = intent.getIntExtra(Constants.TOTAL_QUESTIONS, 0)
         val correctAnswers = intent.getIntExtra(Constants.CORRECT_ANSWERS, 0)
+
+        if (correctAnswers <= 5){
+            tv_congratulations.setText("Not quite there. Try again.")
+            iv_result
+        }
 
         tv_result_name.text = username
         tv_score.text = "Your score is $correctAnswers out of $totalQuestions"

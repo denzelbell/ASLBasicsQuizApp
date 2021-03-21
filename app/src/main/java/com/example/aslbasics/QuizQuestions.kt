@@ -72,7 +72,7 @@ class QuizQuestions : AppCompatActivity(), View.OnClickListener {
         tv_question.text = question!!.questions
 
         // set image
-        iv_image.setImageResource(question.image)
+        iv_sign.setImageResource(question.image)
 
         // set text
         tv_opt1.text = question.opt1
