@@ -64,6 +64,74 @@ object Constants{
         )
         questionList.add(que5)
 
+        val que6 = Questions(
+                6,
+                "What does this sign represent?",
+                R.drawable.f_letter,
+                "K",
+                "F",
+                "G",
+                2
+        )
+        questionList.add(que6)
+
+        val que7 = Questions(
+                7,
+                "What does this sign represent?",
+                R.drawable.g_letter,
+                "G",
+                "U",
+                "7",
+                1
+        )
+        questionList.add(que7)
+
+        val que8 = Questions(
+                8,
+                "What does this sign represent?",
+                R.drawable.h_letter,
+                "L",
+                "H",
+                "R",
+                2
+        )
+        questionList.add(que8)
+
+        val que9 = Questions(
+                9,
+                "What does this sign represent?",
+                R.drawable.i_letter,
+                "O",
+                "P",
+                "I",
+                3
+        )
+        questionList.add(que9)
+
+        val que10 = Questions(
+                10,
+                "What does this sign represent?",
+                R.drawable.j_letter,
+                "J",
+                "Q",
+                "W",
+                3
+        )
+        questionList.add(que10)
+
+        val que11 = Questions(
+                11,
+                "What does this sign represent?",
+                R.drawable.k_letter,
+                "N",
+                "K",
+                "B",
+                2
+        )
+        questionList.add(que11)
+
+
+
 
         return questionList
     }
