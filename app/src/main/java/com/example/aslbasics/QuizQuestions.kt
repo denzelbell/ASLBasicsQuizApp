@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_quiz_questions.*
+import kotlin.random.Random
 
 class QuizQuestions : AppCompatActivity(), View.OnClickListener {
 
@@ -59,7 +60,7 @@ class QuizQuestions : AppCompatActivity(), View.OnClickListener {
 
         defaultOptView()
 
-        if (aCurrentPosition == aQuestionList!!.size) {
+        if (aCurrentPosition == 10) {
             btn_submit.text = "FINISH"
         } else {
             btn_submit.text = "SUBMIT"
@@ -97,7 +98,7 @@ class QuizQuestions : AppCompatActivity(), View.OnClickListener {
                     aCurrentPosition++
 
                     when{
-                        aCurrentPosition <= aQuestionList!!.size ->{
+                        aCurrentPosition <= 10 ->{
 
                             setQuestion()
                             tv_opt1.isClickable = true
@@ -108,7 +109,7 @@ class QuizQuestions : AppCompatActivity(), View.OnClickListener {
                         val intent = Intent(this, Results::class.java)
                         intent.putExtra(Constants.USER_NAME, aUserName)
                         intent.putExtra(Constants.CORRECT_ANSWERS, aCorrectAnswers)
-                        intent.putExtra(Constants.TOTAL_QUESTIONS, aQuestionList!!.size)
+                        intent.putExtra(Constants.TOTAL_QUESTIONS, 10)
                         startActivity(intent)
                         finish()
                     }
@@ -130,7 +131,7 @@ class QuizQuestions : AppCompatActivity(), View.OnClickListener {
                     tv_opt2.isClickable = false
                     tv_opt3.isClickable = false
 
-                    if (aCurrentPosition == aQuestionList!!.size) {
+                    if (aCurrentPosition == 10) {
                         btn_submit.text = "FINISH"
                     } else {
                         btn_submit.text = "GO TO NEXT QUESTION"

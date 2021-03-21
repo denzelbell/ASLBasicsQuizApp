@@ -13,7 +13,7 @@ object Constants{
             1,
             "What does this sign represent?",
             R.drawable.a_letter,
-            "B",
+            "S",
             "G",
             "A",
             3
@@ -81,7 +81,7 @@ object Constants{
                 R.drawable.g_letter,
                 "G",
                 "U",
-                "7",
+                "H",
                 1
         )
         questionList.add(que7)
@@ -92,7 +92,7 @@ object Constants{
                 R.drawable.h_letter,
                 "L",
                 "H",
-                "R",
+                "G",
                 2
         )
         questionList.add(que8)
@@ -115,7 +115,7 @@ object Constants{
                 "J",
                 "Q",
                 "W",
-                3
+                1
         )
         questionList.add(que10)
 
@@ -130,9 +130,173 @@ object Constants{
         )
         questionList.add(que11)
 
+        val que12 = Questions(
+                12,
+                "What does this sign represent?",
+                R.drawable.l_letter,
+                "A",
+                "O",
+                "L",
+                3
+        )
+        questionList.add(que12)
+
+        val que13 = Questions(
+                13,
+                "What does this sign represent?",
+                R.drawable.m_letter,
+                "M",
+                "T",
+                "N",
+                1
+        )
+        questionList.add(que13)
+
+        val que14 = Questions(
+                14,
+                "What does this sign represent?",
+                R.drawable.n_letter,
+                "T",
+                "M",
+                "N",
+                3
+        )
+        questionList.add(que14)
+
+        val que15 = Questions(
+                15,
+                "What does this sign represent?",
+                R.drawable.o_letter,
+                "R",
+                "O",
+                "T",
+                2
+        )
+        questionList.add(que15)
+
+        val que16 = Questions(
+                16,
+                "What does this sign represent?",
+                R.drawable.p_letter,
+                "P",
+                "K",
+                "B",
+                1
+        )
+        questionList.add(que16)
+
+        val que17 = Questions(
+                17,
+                "What does this sign represent?",
+                R.drawable.q_letter,
+                "D",
+                "W",
+                "Q",
+                3
+        )
+        questionList.add(que17)
+
+        val que18 = Questions(
+                18,
+                "What does this sign represent?",
+                R.drawable.r_letter,
+                "N",
+                "R",
+                "U",
+                2
+        )
+        questionList.add(que18)
+
+        val que19 = Questions(
+                19,
+                "What does this sign represent?",
+                R.drawable.s_letter,
+                "A",
+                "P",
+                "S",
+                3
+        )
+        questionList.add(que19)
+
+        val que20 = Questions(
+                20,
+                "What does this sign represent?",
+                R.drawable.t_letter,
+                "T",
+                "M",
+                "N",
+                1
+        )
+        questionList.add(que20)
+
+        val que21 = Questions(
+                21,
+                "What does this sign represent?",
+                R.drawable.u_letter,
+                "Z",
+                "P",
+                "U",
+                3
+        )
+        questionList.add(que21)
+
+        val que22 = Questions(
+                22,
+                "What does this sign represent?",
+                R.drawable.v_letter,
+                "K",
+                "V",
+                "L",
+                2
+        )
+        questionList.add(que22)
+
+        val que23 = Questions(
+                23,
+                "What does this sign represent?",
+                R.drawable.w_letter,
+                "W",
+                "V",
+                "N",
+                1
+        )
+        questionList.add(que23)
+
+        val que24 = Questions(
+                24,
+                "What does this sign represent?",
+                R.drawable.x_letter,
+                "E",
+                "R",
+                "X",
+                3
+        )
+        questionList.add(que24)
+
+        val que25 = Questions(
+                25,
+                "What does this sign represent?",
+                R.drawable.y_letter,
+                "Y",
+                "B",
+                "U",
+                1
+        )
+        questionList.add(que25)
+
+        val que26 = Questions(
+                26,
+                "What does this sign represent?",
+                R.drawable.z_letter,
+                "T",
+                "Z",
+                "J",
+                2
+        )
+        questionList.add(que26)
 
 
-
+        questionList.shuffle()
         return questionList
     }
 }
