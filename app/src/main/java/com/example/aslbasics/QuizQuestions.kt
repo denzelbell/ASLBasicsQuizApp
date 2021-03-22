@@ -9,7 +9,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_quiz_questions.*
-import kotlin.random.Random
+
 
 class QuizQuestions : AppCompatActivity(), View.OnClickListener {
 

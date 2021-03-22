@@ -46,7 +46,7 @@
             >
 
             <ProgressBar
-                android:id="@+id/progressBar"
+                android:id="@+id/progressNumBar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                 />
 
             <TextView
-                android:id="@+id/tv_progress"
+                android:id="@+id/tv_progress_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
