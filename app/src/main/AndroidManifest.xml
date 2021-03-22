@@ -16,6 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASLBasics">
         <activity
+            android:name=".NumbersQuiz"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            />
+        <activity
             android:name=".OptionsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
@@ -28,14 +33,12 @@
         <activity
             android:name=".QuizQuestions"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionBarTheme"
-            />
+            android:theme="@style/NoActionBarTheme" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize"
-            >
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
