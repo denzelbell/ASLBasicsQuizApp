@@ -74,7 +74,7 @@
                 android:backgroundTint="#10C048"
                 android:text="Start"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="20sp"
                 />
 
             </LinearLayout>

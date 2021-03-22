@@ -24,6 +24,8 @@ class QuizQuestions : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
 
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+
         aUserName = intent.getStringExtra(Constants.USER_NAME)
 
         aQuestionList = Constants.getQuestions()

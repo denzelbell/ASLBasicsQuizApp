@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             if (tv_name.text.toString().isEmpty()) {
                 Toast.makeText(this, "Please enter name", Toast.LENGTH_LONG).show()
             } else {
-                val intent = Intent(this, QuizQuestions::class.java)
+                val intent = Intent(this, OptionsActivity::class.java)
                 intent.putExtra(Constants.USER_NAME,tv_name.text.toString())
                 startActivity(intent)
                 finish()
