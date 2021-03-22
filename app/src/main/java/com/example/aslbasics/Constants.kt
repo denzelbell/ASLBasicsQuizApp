@@ -406,7 +406,7 @@ object Constants {
         val que10 = Questions(
                 10,
                 "What does this sign represent?",
-                R.drawable.ten,
+                R.drawable.tn_num,
                 "7",
                 "1",
                 "10",
