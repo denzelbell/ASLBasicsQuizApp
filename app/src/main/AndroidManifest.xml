@@ -16,26 +16,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASLBasics">
         <activity
-            android:name="com.drawbytess.aslbasics.com.drawbytes.aslbasics.NumbersQuiz"
+            android:name="com.drawbytess.aslbasics.NumbersQuiz"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             />
         <activity
-            android:name="com.drawbytess.aslbasics.com.drawbytes.aslbasics.OptionsActivity"
+            android:name="com.drawbytess.aslbasics.OptionsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             />
         <activity
-            android:name="com.drawbytess.aslbasics.com.drawbytes.aslbasics.Results"
+            android:name="com.drawbytess.aslbasics.Results"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             />
         <activity
-            android:name="com.drawbytess.aslbasics.com.drawbytes.aslbasics.QuizQuestions"
+            android:name="com.drawbytess.aslbasics.QuizQuestions"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme" />
         <activity
-            android:name="com.drawbytess.aslbasics.com.drawbytes.aslbasics.MainActivity"
+            android:name="com.drawbytess.aslbasics.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize">
