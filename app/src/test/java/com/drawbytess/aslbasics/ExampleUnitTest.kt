@@ -1,4 +1,4 @@
-package com.example.aslbasics
+package com.drawbytess.aslbasics
 
 import org.junit.Test
 

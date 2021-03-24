@@ -1,4 +1,4 @@
-package com.example.aslbasics
+package com.drawbytess.aslbasics
 
 import android.content.Intent
 import android.graphics.Color

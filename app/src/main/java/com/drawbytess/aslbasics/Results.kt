@@ -1,13 +1,9 @@
-package com.example.aslbasics
+package com.drawbytess.aslbasics
 
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.core.content.ContextCompat
-import kotlinx.android.synthetic.main.activity_quiz_questions.*
 import kotlinx.android.synthetic.main.activity_results.*
 
 class Results : AppCompatActivity() {

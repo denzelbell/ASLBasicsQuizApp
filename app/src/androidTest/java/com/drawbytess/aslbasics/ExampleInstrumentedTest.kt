@@ -1,4 +1,4 @@
-package com.example.aslbasics
+package com.drawbytess.aslbasics
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

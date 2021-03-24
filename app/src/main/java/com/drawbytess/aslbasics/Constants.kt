@@ -1,4 +1,4 @@
-package com.example.aslbasics
+package com.drawbytess.aslbasics
 
 object Constants {
     const val USER_NAME: String = "user_name"

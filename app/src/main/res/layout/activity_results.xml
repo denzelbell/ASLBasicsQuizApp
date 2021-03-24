@@ -9,7 +9,7 @@
     android:padding="20dp"
     android:gravity="center"
     android:background="@drawable/result_background"
-    tools:context=".Results"
+    tools:context="com.drawbytess.aslbasics.com.drawbytes.aslbasics.Results"
     >
 
     <TextView
