@@ -1,5 +1,6 @@
 package com.drawbytess.aslbasics
 
+
 object Constants {
     const val USER_NAME: String = "user_name"
     const val TOTAL_QUESTIONS: String = "total_question"
@@ -384,13 +385,13 @@ object Constants {
         val que8 = Questions(
                 8,
                 "What does this sign represent?",
-                R.drawable.one_num,
+                R.drawable.eight_num,
                 "9",
                 "8",
                 "3",
                 2
         )
-        questionList.add(que1)
+        questionList.add(que8)
 
         val que9 = Questions(
                 9,
