@@ -15,24 +15,51 @@
         android:id="@+id/btn_letters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:backgroundTint="#10C048"
-        android:text="ALPHABET"
+        android:text="      ALPHABET      "
         android:padding="15dp"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:drawableStart="@drawable/ic_letter"
         />
 
     <Button
         android:id="@+id/btn_numbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#10C048"
-        android:text="NUMBERS"
+        android:text="      NUMBERS      "
         android:padding="15dp"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:drawableStart="@drawable/ic_number"
+        />
+
+    <Button
+        android:id="@+id/btn_feelings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#10C048"
+        android:text="      FEELINGS      "
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/ic_feelings"
+        />
+
+    <Button
+        android:id="@+id/btn_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#10C048"
+        android:text="      PEOPLE      "
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/ic_people"
         />
 
 </LinearLayout>

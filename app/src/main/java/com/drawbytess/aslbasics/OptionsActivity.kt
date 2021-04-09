@@ -29,5 +29,19 @@ class OptionsActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        btn_feelings.setOnClickListener {
+            val intent = Intent(this, FeelingsQuiz::class.java)
+            intent.putExtra(Constants.USER_NAME, username)
+            startActivity(intent)
+            finish()
+        }
+
+        btn_people.setOnClickListener {
+            val intent = Intent(this, PeopleQuiz::class.java)
+            intent.putExtra(Constants.USER_NAME, username)
+            startActivity(intent)
+            finish()
+        }
     }
 }
