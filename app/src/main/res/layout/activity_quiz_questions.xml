@@ -34,7 +34,7 @@
             android:layout_width="200sp"
             android:layout_height="220sp"
             android:layout_marginTop="16dp"
-            app:srcCompat="@drawable/a_letter"
+            app:srcCompat="@drawable/ivl_a"
             />
 
     <LinearLayout
