@@ -30,8 +30,8 @@ class OptionsActivity : AppCompatActivity() {
             finish()
         }
 
-        btn_feelings.setOnClickListener {
-            val intent = Intent(this, FeelingsQuiz::class.java)
+        btn_feeling.setOnClickListener {
+            val intent = Intent(this, FeelingQuiz::class.java)
             intent.putExtra(Constants.USER_NAME, username)
             startActivity(intent)
             finish()

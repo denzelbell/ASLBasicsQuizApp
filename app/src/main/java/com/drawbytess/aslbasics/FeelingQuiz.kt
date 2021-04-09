@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_quiz_questions.*
 
 
-class FeelingsQuiz : AppCompatActivity(), View.OnClickListener {
+class FeelingQuiz : AppCompatActivity(), View.OnClickListener {
 
     private var aCurrentPosition: Int = 1
     private var aQuestionList: ArrayList<Questions>? = null
@@ -28,7 +28,7 @@ class FeelingsQuiz : AppCompatActivity(), View.OnClickListener {
 
         aUserName = intent.getStringExtra(Constants.USER_NAME)
 
-        aQuestionList = Constants.getFeelingsQuestions()
+        aQuestionList = Constants.getFeelQuestions()
 
         setQuestion()
 

@@ -529,7 +529,7 @@ object Constants {
         return questionList
     }
 
-    fun getFeelingsQuestions(): ArrayList<Questions> {
+    fun getFeelQuestions(): ArrayList<Questions> {
 
         val questionList = ArrayList<Questions>()
 
