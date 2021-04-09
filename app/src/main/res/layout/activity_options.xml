@@ -9,7 +9,7 @@
     android:padding="20dp"
     android:gravity="center"
     android:background="@drawable/asl_background"
-    tools:context="com.drawbytess.aslbasics.com.drawbytes.aslbasics.OptionsActivity">
+    tools:context="com.drawbytess.aslbasics.OptionsActivity">
 
     <Button
         android:id="@+id/btn_letters"
