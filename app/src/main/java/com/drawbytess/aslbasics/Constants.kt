@@ -658,7 +658,7 @@ object Constants {
             R.drawable.ivp_baby,
             "Boy",
             "Baby",
-            "Littlw",
+            "Little",
             2
         )
         questionList.add(que1)
@@ -777,4 +777,5 @@ object Constants {
         questionList.shuffle()
         return questionList
     }
+
 }

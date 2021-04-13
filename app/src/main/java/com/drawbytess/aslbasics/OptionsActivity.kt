@@ -1,5 +1,6 @@
 package com.drawbytess.aslbasics
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,7 +32,7 @@ class OptionsActivity : AppCompatActivity() {
         }
 
         btn_feeling.setOnClickListener {
-            val intent = Intent(this, FeelingQuiz::class.java)
+            val intent = Intent(this, FeelingsQuiz::class.java)
             intent.putExtra(Constants.USER_NAME, username)
             startActivity(intent)
             finish()
@@ -43,5 +44,6 @@ class OptionsActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
     }
 }

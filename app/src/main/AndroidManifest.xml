@@ -16,6 +16,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASLBasics">
         <activity
+            android:name="com.drawbytess.aslbasics.PeopleQuiz"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            />
+        <activity
+            android:name="com.drawbytess.aslbasics.FeelingsQuiz"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            />
+        <activity
             android:name="com.drawbytess.aslbasics.NumbersQuiz"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"

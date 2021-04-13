@@ -70,7 +70,7 @@
 
     </LinearLayout>
 
-    <TextView
+    <Button
         android:id="@+id/tv_opt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
         tools:text="Apple"
         />
 
-    <TextView
+    <Button
         android:id="@+id/tv_opt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
         tools:text="Apple"
         />
 
-    <TextView
+    <Button
         android:id="@+id/tv_opt3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
